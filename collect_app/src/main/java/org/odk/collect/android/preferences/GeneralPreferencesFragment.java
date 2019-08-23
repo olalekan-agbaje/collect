@@ -48,10 +48,10 @@ public class GeneralPreferencesFragment extends BasePreferenceFragment implement
         addPreferencesFromResource(R.xml.general_preferences);
 
         findPreference("protocol").setOnPreferenceClickListener(this);
-        findPreference("user_interface").setOnPreferenceClickListener(this);
-        findPreference("maps").setOnPreferenceClickListener(this);
-        findPreference("form_management").setOnPreferenceClickListener(this);
-        findPreference("user_and_device_identity").setOnPreferenceClickListener(this);
+//        findPreference("user_interface").setOnPreferenceClickListener(this);
+//        findPreference("maps").setOnPreferenceClickListener(this);
+//        findPreference("form_management").setOnPreferenceClickListener(this);
+//        findPreference("user_and_device_identity").setOnPreferenceClickListener(this);
 
         if (!getArguments().getBoolean(INTENT_KEY_ADMIN_MODE)) {
             setPreferencesVisibility();

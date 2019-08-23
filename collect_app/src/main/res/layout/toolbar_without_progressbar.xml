@@ -5,7 +5,7 @@
     style="@style/Widget.Collect.Toolbar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:background="?attr/colorPrimary"
+    android:background="@color/blue_500"
     android:minHeight="?attr/actionBarSize"
     app:contentInsetEnd="0dp"
     app:contentInsetStart="0dp"

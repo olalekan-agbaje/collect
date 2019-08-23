@@ -9,25 +9,31 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <Preference
         android:icon="@drawable/ic_cloud"
         android:key="protocol"
         android:title="@string/server_settings_title" />
-    <Preference
-        android:icon="@drawable/ic_phonelink_setup"
-        android:key="user_interface"
-        android:title="@string/client" />
-    <Preference
-        android:icon="@drawable/ic_map"
-        android:key="maps"
-        android:title="@string/maps" />
-    <Preference
-        android:icon="@drawable/ic_assignment"
-        android:key="form_management"
-        android:title="@string/form_management_preferences" />
-    <Preference
-        android:icon="@drawable/ic_face"
-        android:key="user_and_device_identity"
-        android:title="@string/user_and_device_identity_title" />
+    <!--<Preference-->
+        <!--android:icon="@drawable/ic_phonelink_setup"-->
+        <!--android:key="user_interface"-->
+        <!--android:title="@string/client"-->
+        <!--android:visibility="invisible"-->
+        <!--tools:visibility="visible" />-->
+    <!--<Preference-->
+        <!--android:icon="@drawable/ic_map"-->
+        <!--android:key="maps"-->
+        <!--android:title="@string/maps"-->
+        <!--android:visibility="gone"-->
+        <!--tools:visibility="gone" />-->
+    <!--<Preference-->
+        <!--android:icon="@drawable/ic_assignment"-->
+        <!--android:key="form_management"-->
+        <!--android:title="@string/form_management_preferences" />-->
+    <!--<Preference-->
+        <!--android:icon="@drawable/ic_face"-->
+        <!--android:key="user_and_device_identity"-->
+        <!--android:title="@string/user_and_device_identity_title"-->
+        <!--android:visibility="invisible" />-->
 </PreferenceScreen>

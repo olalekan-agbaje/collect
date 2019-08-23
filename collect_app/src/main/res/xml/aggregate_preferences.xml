@@ -1,8 +1,11 @@
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <PreferenceCategory
         android:key="@string/server_preferences"
-        android:title="@string/aggregate_preferences">
+        android:title=""
+        android:visibility="invisible"
+        tools:visibility="invisible">
         <EditTextPreference
             android:dialogTitle="@string/change_server_url"
             android:inputType="textNoSuggestions"

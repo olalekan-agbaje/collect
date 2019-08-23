@@ -28,7 +28,7 @@
         android:paddingTop="@dimen/margin_large">
 
         <TextView
-            android:id="@+id/main_menu_header"
+            android:id="@+id/main_menu_header_"
             style="@style/TextAppearance.Collect.Headline6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,18 +37,9 @@
             android:textStyle="bold"
             android:textAlignment="center" />
 
-        <TextView
-            style="@style/TextAppearance.Collect.Subtitle1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/margin_medium"
-            android:text="@string/main_menu_details"
-            android:textAlignment="center" />
-
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="661dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -63,33 +54,35 @@
                     android:orientation="vertical">
 
                     <Button
-                        android:id="@+id/enter_data"
-                        style="@style/Widget.Collect.Button.Big"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/margin_small" />
-
-                    <Button
-                        android:id="@+id/review_data"
-                        style="@style/Widget.Collect.Button.Big"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/margin_small" />
-
-                    <Button
-                        android:id="@+id/send_data"
-                        style="@style/Widget.Collect.Button.Big"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/margin_small" />
-
-                    <Button
-                        android:id="@+id/view_sent_forms"
+                        android:id="@+id/enter_data_"
                         style="@style/Widget.Collect.Button.Big"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_small"
-                        android:text="@string/view_sent_forms" />
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/review_data_"
+                        style="@style/Widget.Collect.Button.Big"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small" />
+
+                    <Button
+                        android:id="@+id/send_data_"
+                        style="@style/Widget.Collect.Button.Big"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small" />
+
+                    <Button
+                        android:id="@+id/view_sent_forms_"
+                        style="@style/Widget.Collect.Button.Big"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="@string/view_sent_forms"
+                        android:visibility="invisible" />
 
                 </LinearLayout>
 
@@ -100,14 +93,14 @@
                     android:orientation="vertical">
 
                     <Button
-                        android:id="@+id/get_forms"
+                        android:id="@+id/get_forms_"
                         style="@style/Widget.Collect.Button.Big"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_small" />
 
                     <Button
-                        android:id="@+id/manage_forms"
+                        android:id="@+id/manage_forms_"
                         style="@style/Widget.Collect.Button.Big"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -116,5 +109,11 @@
             </LinearLayout>
 
         </ScrollView>
+
+        <Button
+            android:id="@+id/button2_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
     </LinearLayout>
 </RelativeLayout>
