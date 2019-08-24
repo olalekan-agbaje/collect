@@ -11,4 +11,5 @@
     app:contentInsetStart="0dp"
     app:contentInsetStartWithNavigation="0dp"
     app:navigationIcon="@drawable/notes"
-    app:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+    app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:titleTextColor="@color/design_default_color_on_primary" />
