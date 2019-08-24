@@ -16,13 +16,15 @@
         android:layout_height="0dp"/>
 
     <!-- AlignedImageWidget, ImageWebViewWidget, ImageWidget -->
-    <View android:id="@+id/capture_image"
+    <View
+        android:id="@+id/capture_image"
         android:layout_width="0dp"
-        android:layout_height="0dp"/>
+        android:layout_height="0dp" />
 
-    <View android:id="@+id/choose_image"
+    <View
+        android:id="@+id/choose_image"
         android:layout_width="0dp"
-        android:layout_height="0dp"/>
+        android:layout_height="0dp" />
 
     <!-- AnnotateButton -->
     <View android:id="@+id/markup_image"
