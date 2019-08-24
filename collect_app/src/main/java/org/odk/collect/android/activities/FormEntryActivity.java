@@ -291,7 +291,7 @@ public class FormEntryActivity extends CollectAbstractActivity implements Animat
         LEFT, RIGHT, FADE
     }
 
-    private boolean showNavigationButtons;
+    private boolean showNavigationButtons = true;
 
     private Bundle state;
 
@@ -970,8 +970,10 @@ public class FormEntryActivity extends CollectAbstractActivity implements Animat
                 && formController.getLanguages() != null
                 && formController.getLanguages().length > 1;
 
-        menu.findItem(R.id.menu_languages).setVisible(useability)
+        menu.findItem(R.id.menu_languages).setVisible(false)
                 .setEnabled(useability);
+//        menu.findItem(R.id.menu_languages).setVisible(useability)
+//                .setEnabled(useability);
 
         useability = (boolean) AdminSharedPreferences.getInstance().get(AdminKeys.KEY_ACCESS_SETTINGS);
 
@@ -2128,8 +2130,8 @@ public class FormEntryActivity extends CollectAbstractActivity implements Animat
             return;
         }
 
-        String navigation = (String) GeneralSharedPreferences.getInstance().get(GeneralKeys.KEY_NAVIGATION);
-        showNavigationButtons = navigation.contains(GeneralKeys.NAVIGATION_BUTTONS);
+//        String navigation = (String) GeneralSharedPreferences.getInstance().get(GeneralKeys.KEY_NAVIGATION);
+        showNavigationButtons = true;// navigation.contains(GeneralKeys.NAVIGATION_BUTTONS);
 
         findViewById(R.id.buttonholder).setVisibility(showNavigationButtons ? View.VISIBLE : View.GONE);
         findViewById(R.id.shadow_up).setVisibility(showNavigationButtons ? View.VISIBLE : View.GONE);
@@ -2630,11 +2632,10 @@ public class FormEntryActivity extends CollectAbstractActivity implements Animat
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
                            float velocityY) {
         // only check the swipe if it's enabled in preferences
-        String navigation = (String) GeneralSharedPreferences.getInstance()
-                .get(GeneralKeys.KEY_NAVIGATION);
-
-        if (e1 != null && e2 != null
-                && navigation.contains(GeneralKeys.NAVIGATION_SWIPE) && doSwipe) {
+//        String navigation = (String) GeneralSharedPreferences.getInstance()
+//                .get(GeneralKeys.KEY_NAVIGATION);
+// && navigation.contains(GeneralKeys.NAVIGATION_SWIPE)
+        if (e1 != null && e2 != null && doSwipe) {
             // Looks for user swipes. If the user has swiped, move to the
             // appropriate screen.
 

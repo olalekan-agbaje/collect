@@ -26,6 +26,7 @@
         <item name="alertDialogTheme">@style/Theme.Collect.BaseLight.Dialog.Alert</item>
         <item name="searchViewStyle">@style/Widget.Collect.SearchView.Light</item>
         <item name="iconColor">#de000000</item>
+        <item name="washIconColor">#deffffff</item>
         <item name="dividerColor">#1e000000</item>
         <item name="rankItemColor">#EEEEEE</item>
         <item name="android:textDirection" tools:targetApi="17">locale</item>

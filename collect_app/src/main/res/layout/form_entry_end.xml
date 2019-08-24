@@ -72,9 +72,11 @@ the specific language governing permissions and limitations under the License.
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:background="@color/blue_500"
             android:padding="20dp"
             android:text="@string/quit_entry"
             android:textAllCaps="false"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textSize="21sp" />
 
         <View
